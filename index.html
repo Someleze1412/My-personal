@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio-Someleze</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Someleze Ndenze</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Someleze Ndenze</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="https://lh3.googleusercontent.com/pw/ADCreHdQ0WumndJOMTkWogvUo5uZT-yCfZx6Ni4r4wCkNruji_lN-Lm_rL_gk6du1lN-mziCu4263PeUuyUwixMGNQXzSawFAMuCKsLyUAutIvqA7GImAUeG9yXMd0ATchaGFK83B_r5WlDcef1FpmYLocBsvMiNhLnXb6y-z0-aRhQQwAdYa5D0yaUBJH28cOPjxhCyOq2O3RAcR4vQ2C7ZbpHLgibOeaOtiLlK5Cl__oUVIWIKUELX7E4vDc_EBkNvyaqP4g5E6GSSZXs2JLCcYSyiDSalIwBZ1nFbdvF4-yBibJRRzaea7kcpjD_rflgKc-5uoGQVUbwpbFvIO2_offsCdd9KcBr8VXFsDh0OKvJyMreO28fU3bpphE3eomg5qQUkBS08Jn8Rh3frCftKqkOvPwtF2Iy6vmolr0ZF5ZhYu9xfJaFesydMK-xK_ZrTNREEfN15IvFniIvvDwUd0gRb-xl4nWuXk4FuWEUuBJdfbQJvd3g_xLdYhIpMXqxCRyNevlamN4wweXKC7LDd1UrzmXwbSSoTQd-85dk8_0DF5PUpsH_kMVcAqrNdU3-Df_3TDRvxWuArxaPd-93bVvHsjUigX4q1vRwX1aMVV0OqvBgBvHBrzAo7VWji9Ef06ORjUj2CNFIouyenv5qxB4yZapP2pf1kFlp0DaWIOmcBmHpXFprQzPrT80IniCGN0HtTFaDcsoLvstanrJQS_hY2yisuLHhlg260zKLYuTj9E5StoxalpB6hRhZER10qlWOKCpXQ-cj4z5tLCKGVaaX_wen_Q_k_hSGPsdC6V6j2KioEkMR00lQKc4tZchlAHKUEYVP2PLFK7O1oeKNv4Afjrpq3utyeDaUzIoKTa31btSzAbzUidJ3K5iqE8rW65kg0diqtUe3Fgp_uN8ka7kVQhQ=w457-h609-s-no-gm?authuser=0" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Someleze Ndenze</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('https://mail.google.com/mail/u/0?ui=2&ik=92d676e951&attid=0.1&permmsgid=msg-a:r-8595324147187060062&th=18bb3f40fd1cd458&view=att&disp=inline&realattid=18bb3f36b9f9205209f1')"
+          >
+            Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="https://github.com/Ade-mir/html-css-js-portfolio-tutorial-2/blob/main/assets/linkedin.png?raw=true"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='Someleze Ndenze'"
+          />
+          <img
+            src="https://github.com/Ade-mir/html-css-js-portfolio-tutorial-2/blob/main/assets/github.png?raw=true"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Someleze1412'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="https://lh3.googleusercontent.com/pw/ADCreHdQ0WumndJOMTkWogvUo5uZT-yCfZx6Ni4r4wCkNruji_lN-Lm_rL_gk6du1lN-mziCu4263PeUuyUwixMGNQXzSawFAMuCKsLyUAutIvqA7GImAUeG9yXMd0ATchaGFK83B_r5WlDcef1FpmYLocBsvMiNhLnXb6y-z0-aRhQQwAdYa5D0yaUBJH28cOPjxhCyOq2O3RAcR4vQ2C7ZbpHLgibOeaOtiLlK5Cl__oUVIWIKUELX7E4vDc_EBkNvyaqP4g5E6GSSZXs2JLCcYSyiDSalIwBZ1nFbdvF4-yBibJRRzaea7kcpjD_rflgKc-5uoGQVUbwpbFvIO2_offsCdd9KcBr8VXFsDh0OKvJyMreO28fU3bpphE3eomg5qQUkBS08Jn8Rh3frCftKqkOvPwtF2Iy6vmolr0ZF5ZhYu9xfJaFesydMK-xK_ZrTNREEfN15IvFniIvvDwUd0gRb-xl4nWuXk4FuWEUuBJdfbQJvd3g_xLdYhIpMXqxCRyNevlamN4wweXKC7LDd1UrzmXwbSSoTQd-85dk8_0DF5PUpsH_kMVcAqrNdU3-Df_3TDRvxWuArxaPd-93bVvHsjUigX4q1vRwX1aMVV0OqvBgBvHBrzAo7VWji9Ef06ORjUj2CNFIouyenv5qxB4yZapP2pf1kFlp0DaWIOmcBmHpXFprQzPrT80IniCGN0HtTFaDcsoLvstanrJQS_hY2yisuLHhlg260zKLYuTj9E5StoxalpB6hRhZER10qlWOKCpXQ-cj4z5tLCKGVaaX_wen_Q_k_hSGPsdC6V6j2KioEkMR00lQKc4tZchlAHKUEYVP2PLFK7O1oeKNv4Afjrpq3utyeDaUzIoKTa31btSzAbzUidJ3K5iqE8rW65kg0diqtUe3Fgp_uN8ka7kVQhQ=w457-h609-s-no-gm?authuser=0"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="https://github.com/Ade-mir/html-css-js-portfolio-tutorial-2/blob/main/assets/experience.png?raw=true"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>0-1 year <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="https://github.com/Ade-mir/html-css-js-portfolio-tutorial-2/blob/main/assets/education.png?raw=true"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Web Development<br />React Developer</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              As recent graduate of Shecodes Foundation with a backgound in front-end development and React
+              I have a track record of quickly grasping new concerpts and technologies, and I am committed to staying updated with the latest trends in web development. I am also a team player who thrives in collaborative environments and believes in open communication to achieve project goals efficiently.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="https://github.com/Ade-mir/html-css-js-portfolio-tutorial-2/blob/main/assets/arrow.png?raw=true"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="https://github.com/Ade-mir/html-css-js-portfolio-tutorial-2/blob/main/assets/experience.png?raw=true"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://github.com/Ade-mir/html-css-js-portfolio-tutorial-2/blob/main/assets/experience.png?raw=true"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://github.com/Ade-mir/html-css-js-portfolio-tutorial-2/blob/main/assets/experience.png?raw=true"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://github.com/Ade-mir/html-css-js-portfolio-tutorial-2/blob/main/assets/experience.png?raw=true"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://github.com/Ade-mir/html-css-js-portfolio-tutorial-2/blob/main/assets/experience.png?raw=true"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Responsive Web Design</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://github.com/Ade-mir/html-css-js-portfolio-tutorial-2/blob/main/assets/experience.png?raw=true"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>UI/UX Design</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="https://github.com/Ade-mir/html-css-js-portfolio-tutorial-2/blob/main/assets/experience.png?raw=true"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Restful API</h3>
+                  <p>Intermediate/p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://github.com/Ade-mir/html-css-js-portfolio-tutorial-2/blob/main/assets/experience.png?raw=true"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://github.com/Ade-mir/html-css-js-portfolio-tutorial-2/blob/main/assets/experience.png?raw=true"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://github.com/Ade-mir/html-css-js-portfolio-tutorial-2/blob/main/assets/experience.png?raw=true"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="https://github.com/Ade-mir/html-css-js-portfolio-tutorial-2/blob/main/assets/arrow.png?raw=true"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://a5.mzstatic.com/us/r30/Purple117/v4/9e/b8/f4/9eb8f45e-080e-6ad8-a3ce-20fc84e36995/screen320x480.jpeg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Someleze1412/Exchange-rate-calculator'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Someleze1412/Exchange-rate-calculator'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="data:image/jpeg;base64,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"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Someleze1412/YouTube-UI-clone'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Someleze1412/YouTube-UI-clone'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+            src="data:image/jpeg;base64,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"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Someleze1412/Budget-App'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Someleze1412/Budget-App'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="https://github.com/Ade-mir/html-css-js-portfolio-tutorial-2/blob/main/assets/arrow.png?raw=true"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="https://github.com/Ade-mir/html-css-js-portfolio-tutorial-2/blob/main/assets/email.png?raw=true"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="ndenzesomeleze@gmail.com">ndenzesomeleze@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="https://github.com/Ade-mir/html-css-js-portfolio-tutorial-2/blob/main/assets/linkedin.png?raw=true"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Someleze Ndenze. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
